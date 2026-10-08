@@ -20,7 +20,7 @@ export default function ManifestTerminal() {
       }
     >
       <pre className="font-mono text-[13px] leading-7 whitespace-pre-wrap">
-        <span className="text-crimson">raihaan@nixos:~$ cat</span> manifest.json{'\n'}
+        <span className="text-crimson">{manifest.prompt} cat</span> manifest.json{'\n'}
         <span className="text-crimson">{'{'}</span>
         {'\n'}
         {entries.map(([key, value], i) => (

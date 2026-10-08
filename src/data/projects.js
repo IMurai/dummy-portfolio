@@ -1,19 +1,11 @@
 export const projects = [
   {
-    title: 'DocuMind AI',
-    category: 'AI Engineering',
+    title: 'EduClass LMS',
+    category: 'Fullstack Web Development',
     featured: true,
     description:
-      'A RAG-based document Q&A assistant that answers questions from uploaded PDFs with source citations. Built with hybrid search and an evaluation workflow to reduce hallucinations, keeping responses under 3 seconds.',
-    stack: [
-      'Python',
-      'LangChain',
-      'OpenAI API',
-      'FAISS',
-      'FastAPI',
-      'Docker',
-      'React',
-    ],
+      'A simple e-learning platform where teachers create classes, upload materials, and assign tasks, while students enroll, submit assignments, and track their grades. Features role-based access (admin, teacher, student) with JWT authentication.',
+    stack: ['React', 'Node.js', 'Express', 'PostgreSQL', 'JWT', 'Docker'],
     links: [
       { label: '[Github]', href: '#', primary: true },
       { label: '[Go To]', href: '#' },
@@ -32,12 +24,12 @@ export const projects = [
     ],
   },
   {
-    title: 'ShopFlow API',
-    category: 'Backend Development',
+    title: 'DuitKu Tracker',
+    category: 'Mobile App Development',
     featured: true,
     description:
-      'A scalable REST API for an e-commerce platform with JWT authentication, order processing, and payment integration. Uses Redis caching and query optimization to handle 1,000+ requests per second.',
-    stack: ['Node.js', 'Express', 'PostgreSQL', 'Redis', 'Docker', 'Swagger'],
+      'A personal finance app for recording income and expenses by category, with monthly summaries and charts. Works fully offline with local storage, so data stays on the device.',
+    stack: ['Flutter', 'Dart', 'SQLite', 'fl_chart'],
     links: [
       { label: '[Github]', href: '#', primary: true },
       { label: '[Go To]', href: '#' },

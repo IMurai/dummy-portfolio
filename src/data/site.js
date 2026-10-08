@@ -1,8 +1,8 @@
 export const profile = {
   name: 'Hi. Im Raihaan',
-  role: 'AI Engineer',
-  tagline: 'AI Engineer',
-  domain: 'Welcome to my porfolio',
+  role: 'Fullstack Web Developer',
+  tagline: 'Fullstack Web Developer',
+  domain: 'Welcome to my portfolio',
   cvUrl: '#',
 };
 
@@ -17,24 +17,24 @@ export const navLinks = [
 export const stats = [
   { value: '24+', label: 'Project Delivered', accent: true },
   { value: '2+', label: 'Years of Experience' },
-  { value: '45+', label: 'Tech Stack', accent: true },
-  { value: 'Ollama / Hermes', label: 'LLM & AI Agent' },
+  { value: '15+', label: 'Tech Stack', accent: true },
+  { value: 'React / Node.js', label: 'Web Stack' },
 ];
 
 export const statusPanel = [
   { key: 'Project Delivered:', value: '24+' },
   { key: 'Years of Experience:', value: '2+' },
   { key: 'Tech Stack:', value: '15+' },
-  { key: 'LLM & AI Agent:', value: 'Ollama / Hermes', accent: true },
+  { key: 'Web Stack:', value: 'React / Node.js', accent: true },
 ];
 
 export const tickerItems = [
-  'Python',
+  'React',
+  'Next.js',
+  'TypeScript',
   'Node.js',
+  'PostgreSQL',
+  'Flutter',
+  'Dart',
   'Docker',
-  'Kubernetes',
-  'PyTorch',
-  'TensorFlow',
-  'Jupyter Notebook',
-  'Pandas',
 ];

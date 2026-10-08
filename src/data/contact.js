@@ -1,5 +1,5 @@
 export const contact = {
-  heading: 'Open for Infrastructure & Backend Consulting',
+  heading: 'Open for Web & Mobile Projects',
   channels: [
     { key: 'Email:', value: 'raihaan.tech@proton.me', href: 'raihaan.tech@proton.me', accent: true },
     { key: 'GitHub:', value: 'github.com/IMurai', href: 'https://github.com/IMurai' },
@@ -12,8 +12,8 @@ export const contact = {
 
 export const footer = {
   title: 'raihaan.tech@proton.me',
-  disciplines: '[AI Engineer • LLM & AI Agents • DevOps • Backend Developer • Data Science]',
+  disciplines: '[Fullstack Web • Mobile App • DevOps • Data Science]',
   ping: 'Status: Open for new projects',
   build: 'Build: v1.0.0 -- Built with a lot of coffee',
-  copyright: `Building smart systems, from model to production. Copyright ${new Date().getFullYear()}.`,
+  copyright: `Building web and mobile apps, from database to device. Copyright ${new Date().getFullYear()}.`,
 };
