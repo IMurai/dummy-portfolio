@@ -11,7 +11,7 @@ export default function ContactInfo() {
         {contact.channels.map((ch) => {
           const valueClass = cn(
             'text-right',
-            ch.crimson ? 'text-crimson' : ch.accent ? 'text-crimson-soft' : 'text-ink',
+            ch.crimson ? 'text-crimson-soft' : ch.accent ? 'text-crimson-soft' : 'text-ink',
           );
           return (
             <li

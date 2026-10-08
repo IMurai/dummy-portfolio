@@ -7,17 +7,17 @@ export default function Footer() {
         <div className="flex flex-col gap-4 border-b-2 border-surface-highest pb-5 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="font-display text-lg font-bold">{footer.title}</p>
-            <p className="label text-crimson">{footer.disciplines}</p>
+            <p className="label text-violet-soft">{footer.disciplines}</p>
           </div>
 
           <div className="flex items-center gap-4">
             <p className="label flex items-center gap-2 text-ink/80">
-              <span className="size-2 animate-blink bg-crimson" />
+              <span className="size-2 animate-blink bg-crimson motion-reduce:animate-none" />
               {footer.ping}
             </p>
             <a
               href="#home"
-              className="label border-2 border-ink bg-black px-2 py-1 text-ink hover:bg-white hover:text-black"
+              className="label border-2 border-ink bg-chassis px-2 py-1 text-ink hover:bg-ink hover:text-chassis"
             >
               [↑ Re-initialize]
             </a>

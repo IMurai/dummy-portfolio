@@ -1,4 +1,4 @@
-export const primarySkill = {
+export const webSkill = {
   eyebrow: 'Web Application Development',
   title: 'Fullstack Web Developer',
   certification: 'Hands-On Project Experience',
@@ -22,26 +22,41 @@ export const primarySkill = {
   ],
 };
 
+export const mobileSkill = {
+  eyebrow: 'Cross-Platform App Development',
+  title: 'Mobile App Developer',
+  certification: 'Hands-On Project Experience',
+  metrics: [
+    { key: 'Focus Area:', value: 'Offline-First, Local Storage & Charts' },
+    { key: 'Platforms:', value: 'Android (APK)' },
+    { key: 'UI:', value: 'Material-Based, Responsive Layouts' },
+  ],
+  stack: [
+    { name: 'Flutter', highlight: true },
+    { name: 'Dart', highlight: true },
+    { name: 'SQLite', highlight: true },
+    { name: 'React Native' },
+    { name: 'Kotlin' },
+    { name: 'Firebase' },
+    { name: 'REST API' },
+    { name: 'State Management' },
+    { name: 'Git & GitHub' },
+  ],
+};
+
+export const primarySkills = [webSkill, mobileSkill];
+
 export const subsystems = [
   {
     id: '[SUBSYSTEM_01]',
     category: 'Automation',
     title: 'DevOps',
     tags: ['Docker', 'Kubernetes', 'Terraform', 'GitHub Actions', 'AWS', 'Prometheus', 'Grafana'],
-    footer: 'DEPLOY: UNDER 5 MIN',
-  },
-  {
-    id: '[SUBSYSTEM_02]',
-    category: 'Cross-Platform',
-    title: 'Mobile App Development',
-    tags: ['Flutter', 'Dart', 'React Native', 'Kotlin', 'SQLite', 'Firebase', 'REST API'],
-    footer: 'OUTPUT: ANDROID APK',
   },
   {
     id: '[SUBSYSTEM_03]',
     category: 'Analytics',
     title: 'Data Science',
     tags: ['Python', 'Pandas & NumPy', 'Scikit-learn', 'XGBoost', 'SQL', 'Jupyter', 'Streamlit'],
-    footer: 'MODEL: UP TO 90% ACCURACY',
   },
 ];

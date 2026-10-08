@@ -15,13 +15,13 @@ export default function ManifestTerminal() {
       footer={
         <>
           <span>{manifest.hash}</span>
-          <span>PARSER: VALIDATED</span>
+          <span>STATUS: OK</span>
         </>
       }
     >
       <pre className="font-mono text-[13px] leading-7 whitespace-pre-wrap">
-        <span className="text-crimson">{manifest.prompt} cat</span> manifest.json{'\n'}
-        <span className="text-crimson">{'{'}</span>
+        <span className="text-crimson-soft">{manifest.prompt} cat</span> manifest.json{'\n'}
+        <span className="text-crimson-soft">{'{'}</span>
         {'\n'}
         {entries.map(([key, value], i) => (
           <span key={key}>
@@ -37,7 +37,7 @@ export default function ManifestTerminal() {
                 ))}]
               </>
             ) : key === 'status' ? (
-              <span className="text-crimson">"{value}"</span>
+              <span className="text-crimson-soft">"{value}"</span>
             ) : (
               <Str>{value}</Str>
             )}
@@ -45,9 +45,9 @@ export default function ManifestTerminal() {
             {'\n'}
           </span>
         ))}
-        <span className="text-crimson">{'}'}</span>
+        <span className="text-crimson-soft">{'}'}</span>
         {'\n\n'}
-        <span className="text-crimson">{manifest.prompt}</span> <BlinkCursor />
+        <span className="text-crimson-soft">{manifest.prompt}</span> <BlinkCursor />
       </pre>
     </TerminalWindow>
   );

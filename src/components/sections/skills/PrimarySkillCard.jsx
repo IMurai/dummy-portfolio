@@ -1,14 +1,13 @@
-import { primarySkill } from '../../../data/skills';
 import Card from '../../ui/Card';
 import KeyValueRow from '../../ui/KeyValueRow';
 import Tag from '../../ui/Tag';
 
-/** Large card for the main skill area. */
-export default function PrimarySkillCard() {
-  const { eyebrow, title, certification, metrics, stack } = primarySkill;
+/** Large card for a primary skill area (violet accent frame by default). */
+export default function PrimarySkillCard({ skill, shadow = 'violet' }) {
+  const { eyebrow, title, certification, metrics, stack } = skill;
 
   return (
-    <Card tone="raised" shadow="red" className="border-4 border-crimson p-5 md:p-6">
+    <Card tone="raised" shadow={shadow} className="border-4 border-violet p-5 md:p-6">
       <div className="flex flex-col gap-4 border-b-4 border-surface-highest pb-5 md:flex-row md:items-end md:justify-between">
         <div>
           <Tag variant="solid">{eyebrow}</Tag>

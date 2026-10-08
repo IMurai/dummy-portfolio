@@ -1,8 +1,9 @@
 export const profile = {
-  name: 'Hi. Im Raihaan',
+  name: 'Hi. I\'m Raihaan',
   role: 'Fullstack Web Developer',
   tagline: 'Fullstack Web Developer',
   domain: 'Welcome to my portfolio',
+  summary: 'I build web apps from database to UI, and mobile apps that work offline.',
   cvUrl: '#',
 };
 

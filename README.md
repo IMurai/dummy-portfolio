@@ -11,3 +11,20 @@ npm install
 npm run dev
 npm run build
 ```
+
+## Adding project screenshots
+
+1. Put images in `public/projects/` (create the folder if it does not exist).
+2. Set `preview.src` for the project in `src/data/projects.js`, e.g. `preview: { type: 'web', src: '/projects/educlass.png' }`.
+   Leave `src` as `''` to show the "SCREENSHOT PENDING" placeholder.
+3. Recommended sizes: web preview **1280x720** (16:9), mobile preview **540x1140** (9:19).
+
+## Contact form
+
+Copy `.env.example` to `.env` and set your Formspree form ID:
+
+```
+VITE_FORMSPREE_ID=your-form-id
+```
+
+Without it, the contact form falls back to opening the visitor's email app with the message prefilled.

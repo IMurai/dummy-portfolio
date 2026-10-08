@@ -7,7 +7,7 @@ export const contact = {
     { key: 'Telegram:', value: '@IMurai', href: 'https://t.me/IMurai' },
     { key: 'GPG_Key:', value: '0x9F4BC831E', crimson: true },
   ],
-  footnote: 'Encrypted dispatch ready // TTL: 24 hours',
+  footnote: 'Usually replies within a few days',
 };
 
 export const footer = {

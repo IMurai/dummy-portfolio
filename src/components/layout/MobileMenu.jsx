@@ -19,7 +19,7 @@ export default function MobileMenu({ open, onClose }) {
   return (
     <div className={cn('fixed inset-0 z-50', open ? 'visible' : 'invisible')} aria-hidden={!open}>
       <div
-        className={cn('absolute inset-0 bg-black/70', open ? 'opacity-100' : 'opacity-0')}
+        className={cn('absolute inset-0 bg-ink/70', open ? 'opacity-100' : 'opacity-0')}
         onClick={onClose}
       />
 
@@ -28,19 +28,19 @@ export default function MobileMenu({ open, onClose }) {
         aria-modal="true"
         aria-label="Menu"
         className={cn(
-          'absolute top-0 right-0 flex h-full w-[min(20rem,85vw)] flex-col border-l-4 border-crimson bg-surface transition-transform duration-200',
+          'absolute top-0 right-0 flex h-full w-[min(20rem,85vw)] flex-col border-l-4 border-violet bg-surface transition-transform duration-200',
           open ? 'translate-x-0' : 'translate-x-full',
         )}
       >
         <div className="flex items-start justify-between border-b-2 border-surface-highest p-4">
           <div>
             <p className="font-display text-lg font-bold">{profile.name}</p>
-            <p className="label text-crimson">MENU_DISPATCH</p>
+            <p className="label text-violet-soft">MENU_DISPATCH</p>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="border-2 border-ink bg-black px-2.5 py-1 text-sm font-bold hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-white hover:text-black hover:shadow-hard-white-sm"
+            className="border-2 border-ink bg-chassis px-2.5 py-1 text-sm font-bold hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-ink hover:text-chassis hover:shadow-hard-white-sm"
             aria-label="Close menu"
           >
             ✕
@@ -53,7 +53,7 @@ export default function MobileMenu({ open, onClose }) {
               <a
                 href={`#${link.id}`}
                 onClick={onClose}
-                className="block border-2 border-surface-highest bg-surface-mid px-2 py-2 text-[11px] font-semibold uppercase tracking-[0.08em] hover:border-crimson"
+                className="block border-2 border-surface-highest bg-surface-mid px-2 py-2 text-[11px] font-semibold uppercase tracking-[0.08em] hover:border-crimson hover:shadow-hard-white-sm"
               >
                 [{String(i).padStart(2, '0')}] {link.label}
               </a>

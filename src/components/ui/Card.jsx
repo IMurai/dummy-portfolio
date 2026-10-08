@@ -3,6 +3,7 @@ import { cn } from '../../lib/cn';
 const shadows = {
   red: 'shadow-hard-red',
   white: 'shadow-hard-white',
+  violet: 'shadow-hard-violet',
   none: '',
 };
 
@@ -15,7 +16,7 @@ const tones = {
 /** Hard-bordered module with a zero-blur offset shadow. */
 export default function Card({
   as: Component = 'div',
-  shadow = 'red',
+  shadow = 'violet',
   tone = 'base',
   className,
   children,

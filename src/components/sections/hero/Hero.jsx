@@ -28,12 +28,17 @@ export default function Hero() {
               <span className="text-crimson">.</span>
             </h1>
 
-            <p className="mt-5 border-l-4 border-crimson bg-surface-high px-5 py-3 font-display text-xl font-semibold tracking-[-0.01em]">
+            <p className="mt-5 border-l-4 border-violet bg-surface-high px-5 py-3 font-display text-xl font-semibold tracking-[-0.01em]">
               {profile.role}
             </p>
 
+            <p className="mt-4 max-w-xl text-sm text-ink/85">{profile.summary}</p>
+
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href="#contact">Contact</Button>
+              <Button href="#projects" variant="ghost">
+                View Projects
+              </Button>
               <Button href={profile.cvUrl} variant="outline" download>
                 Download CV
               </Button>
