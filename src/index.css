@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+/* Design tokens — taken from the Stitch design system "Cyber Brutalist Engineering Engine" */
+@theme {
+  --color-void: #0a0a0a;
+  --color-chassis: #000000;
+  --color-surface: #131313;
+  --color-surface-low: #1c1b1b;
+  --color-surface-mid: #201f1f;
+  --color-surface-high: #2a2a2a;
+  --color-surface-highest: #353534;
+  --color-ink: #e5e2e1;
+  --color-crimson: #dc2626;
+  --color-crimson-soft: #ffb4ab;
+  --color-slate: #737373;
+  --color-slate-dark: #262626;
+  --color-slate-muted: #525252;
+
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --shadow-hard-red: 6px 6px 0 0 #dc2626;
+  --shadow-hard-white: 6px 6px 0 0 #e5e2e1;
+  --shadow-hard-red-sm: 4px 4px 0 0 #dc2626;
+  --shadow-hard-white-sm: 4px 4px 0 0 #e5e2e1;
+
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-blink: blink 1s step-end infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+}
+
+@layer base {
+  /* Zero radius everywhere — a hard rule of the design system */
+  *, *::before, *::after {
+    border-radius: 0 !important;
+  }
+
+  body {
+    @apply bg-surface font-mono text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-crimson text-white;
+  }
+}
+
+@layer components {
+  .label {
+    @apply font-mono text-[10px] font-semibold uppercase tracking-[0.1em];
+  }
+  .container-brutal {
+    @apply mx-auto w-full max-w-[1280px] px-4 md:px-8;
+  }
+}
