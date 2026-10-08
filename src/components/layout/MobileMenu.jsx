@@ -40,7 +40,7 @@ export default function MobileMenu({ open, onClose }) {
           <button
             type="button"
             onClick={onClose}
-            className="border-2 border-ink bg-black px-2.5 py-1 text-sm hover:bg-white hover:text-black"
+            className="border-2 border-ink bg-black px-2.5 py-1 text-sm font-bold hover:-translate-x-[2px] hover:-translate-y-[2px] hover:bg-white hover:text-black hover:shadow-hard-white-sm"
             aria-label="Close menu"
           >
             ✕

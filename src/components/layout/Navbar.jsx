@@ -48,7 +48,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
-            className="border-2 border-ink bg-black px-3 py-1.5 text-xs font-bold uppercase tracking-[0.08em] md:hidden"
+            className="border-2 border-ink bg-black px-3 py-1.5 text-xs font-bold uppercase tracking-[0.08em] hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-hard-white-sm md:hidden"
             aria-label="Open menu"
             aria-expanded={menuOpen}
           >
